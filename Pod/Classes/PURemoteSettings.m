@@ -35,8 +35,7 @@
     _router = [[PURouter alloc] initWithURL:url username:username password:password];
 
     NSURL *pathForStoredJSON = [self filePathForFileName:filename];
-    NSString *errorMessage = [NSString stringWithFormat:@"Could not find a default json for PURemoteSettings at %@", pathForStoredJSON];
-    NSAssert(pathForStoredJSON, errorMessage);
+    NSAssert(pathForStoredJSON, [NSString stringWithFormat:@"Could not find a default json for PURemoteSettings at %@", pathForStoredJSON]);
     if (!pathForStoredJSON) return nil;
 
     NSData *data = [NSData dataWithContentsOfURL:pathForStoredJSON];
