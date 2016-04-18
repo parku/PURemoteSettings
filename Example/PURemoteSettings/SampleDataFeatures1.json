@@ -1,0 +1,11 @@
+{
+    "features": {
+        "sesam_scan_map_btn": {
+            "enabled": true
+        },
+        "sesam_scan_menu_btn": {
+            "enabled": false
+        }
+    },
+    "other-stuff": []
+}

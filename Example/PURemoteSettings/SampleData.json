@@ -1,0 +1,54 @@
+{
+    "features": {
+        "sesam_scan_map_btn": {
+            "enabled": true
+        },
+        "sesam_scan_menu_btn": {
+            "enabled": false
+        }
+    },
+    "booking": {
+        "collection": {
+            "ttl": 60
+        },
+        "notification": {
+            "time_to_leave": {
+                "enabled": true,
+                "type": "time",
+                "time": {
+                    "minutes": -5,
+                    "relative_to": "begin",
+                    "include_distance": true
+                }
+            },
+            "near_location": {
+                "enabled": true,
+                "type": "region",
+                "radius": 500
+            },
+            "near_entry": {
+                "enabled": true,
+                "type": "region",
+                "radius": 50
+            },
+            "expiring": {
+                "enabled": true,
+                "type": "time",
+                "time": {
+                    "minutes": -10,
+                    "relative_to": "end",
+                    "include_distance": false
+                }
+            },
+            "over": {
+                "enabled": true,
+                "type": "time",
+                "time": {
+                    "minutes": -2,
+                    "relative_to": "end",
+                    "include_distance": false
+                }
+            }
+        }
+    }
+}

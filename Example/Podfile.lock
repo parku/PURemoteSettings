@@ -1,0 +1,14 @@
+PODS:
+  - PURemoteSettings (0.1.0)
+
+DEPENDENCIES:
+  - PURemoteSettings (from `../`)
+
+EXTERNAL SOURCES:
+  PURemoteSettings:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PURemoteSettings: 7e9a90fd57ae47e9d4ae54866fc9f7f676fb7039
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'PURemoteSettings_Example', :exclusive => true do
+  pod 'PURemoteSettings', :path => '../'
+end
+
+target 'PURemoteSettings_Tests', :exclusive => true do
+  pod 'PURemoteSettings', :path => '../'
+
+  
+end
