@@ -6,7 +6,8 @@ language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
-- gem install cocoapods  --no-rdoc --no-ri --no-document --quiet # Since Travis is not always on latest version
+- gem install activesupport --no-rdoc --no-ri --no-document --quiet
+- gem install cocoapods --no-rdoc --no-ri --no-document --quiet # Since Travis is not always on latest version
 - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -workspace Example/PURemoteSettings.xcworkspace -scheme PURemoteSettings-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
