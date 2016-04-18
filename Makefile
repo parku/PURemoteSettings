@@ -37,13 +37,11 @@ _open:
 
 _test:
 	@echo "Testing $(version)"
-	@xctool \
-		-workspace Example/$(POD_NAME).xcworkspace \
-		-scheme $(POD_NAME)-Example
-	# @bundle exec scan \
-	# 	--workspace "Example/$(POD_NAME).xcworkspace" \
-	# 	--scheme "$(POD_NAME)-Example" \
-	# 	--clean
+	xcodebuild test \
+		-workspace Example/PURemoteSettings.xcworkspace \
+		-scheme PURemoteSettings-Example \
+		-sdk iphonesimulator ONLY_ACTIVE_ARCH=NO \
+		| xcpretty
 
 _version:
 	@echo "$(version)"
