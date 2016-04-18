@@ -1,9 +1,6 @@
 # PURemoteSettings
 
-[![CI Status](http://img.shields.io/travis/Danilo/PURemoteSettings.svg?style=flat)](https://travis-ci.org/Danilo/PURemoteSettings)
-[![Version](https://img.shields.io/cocoapods/v/PURemoteSettings.svg?style=flat)](http://cocoapods.org/pods/PURemoteSettings)
-[![License](https://img.shields.io/cocoapods/l/PURemoteSettings.svg?style=flat)](http://cocoapods.org/pods/PURemoteSettings)
-[![Platform](https://img.shields.io/cocoapods/p/PURemoteSettings.svg?style=flat)](http://cocoapods.org/pods/PURemoteSettings)
+[![CI Status](http://img.shields.io/travis/parku/PURemoteSettings.svg?style=flat)](https://travis-ci.org/parku/PURemoteSettings)
 
 ## Usage
 
